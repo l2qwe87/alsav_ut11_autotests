@@ -36,7 +36,7 @@ public class LoginPage : BasePage
         Click(_loginButton);
         
         // Подождем и обработаем информационные алерты (про шрифты и т.д.)
-        System.Threading.Thread.Sleep(_browser.Settings.AlertWaitMilliseconds);
+        System.Threading.Thread.Sleep(2000);
         
         try
         {

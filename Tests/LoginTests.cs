@@ -33,7 +33,7 @@ public class LoginTests
         Assert.That(loginResult, Is.True, "Login should succeed with informational alerts");
         
         // Проверим, что основная страница 1С загрузилась
-        System.Threading.Thread.Sleep(TestSetup.Settings!.PageLoadWaitMilliseconds);
+        System.Threading.Thread.Sleep(3000);
         Assert.That(_mainPage!.IsLoaded(), Is.True, "Main 1C interface should be loaded after login");
         Assert.That(_mainPage.IsMainInterfaceVisible(), Is.True, "Main interface elements should be visible");
         

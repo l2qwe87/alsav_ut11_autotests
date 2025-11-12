@@ -29,7 +29,7 @@ public class AlertHandlingTests
         }
         catch (NoAlertPresentException)
         {
-            // Алерта нет, продолжаем тест
+            Console.WriteLine("No alert present");
         }
         
         // Проверим страницу после обработки alert

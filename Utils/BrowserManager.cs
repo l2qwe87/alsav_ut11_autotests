@@ -18,7 +18,6 @@ public class BrowserManager
 
     public IWebDriver Driver => _driver ?? throw new InvalidOperationException("Driver not initialized");
     public WebDriverWait Wait => _wait ?? throw new InvalidOperationException("Wait not initialized");
-    public TestSettings Settings => _settings;
 
     public void Start()
     {
